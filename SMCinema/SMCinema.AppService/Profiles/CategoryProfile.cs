@@ -5,25 +5,25 @@ using SMCinema.Domain.Models;
 
 namespace SMCinema.AppService.Profiles
 {
-    public class MovieProfile : Profile
+    public class CategoryProfile : Profile
     {
-        public MovieProfile()
+        public CategoryProfile()
         {
-            CreateMap<CreateMovieCommand, Movie>()
+            CreateMap<CreateCategoryCommand, Category>()
                 .ForMember(dst => dst.CreatedAt, opt => opt.Ignore())
                 .ForMember(dst => dst.CreatedBy, opt => opt.Ignore())
                 .ForMember(dst => dst.UpdatedAt, opt => opt.Ignore())
                 .ForMember(dst => dst.UpdatedBy, opt => opt.Ignore())
-                .ForMember(dst => dst.Category, opt => opt.Ignore())
-                .ConstructUsing((src) => new Movie(src.Name, src.Description, MovieStatus.Active, src.CategoryId));
+                .ForMember(dst => dst.Movies, opt => opt.Ignore())
+                .ConstructUsing((src) => new Category(src.Name, src.Description, CategoryStatus.Active));
 
-            CreateMap<UpdateMovieCommand, Movie>()
+            CreateMap<UpdateCategoryCommand, Category>()
                 .ForMember(dst => dst.CreatedAt, opt => opt.Ignore())
                 .ForMember(dst => dst.CreatedBy, opt => opt.Ignore())
                 .ForMember(dst => dst.UpdatedAt, opt => opt.Ignore())
                 .ForMember(dst => dst.UpdatedBy, opt => opt.Ignore())
-                .ForMember(dst => dst.Category, opt => opt.Ignore())
-                .ConstructUsing((src) => new Movie(src.Id, src.Name, src.Description, src.Status, src.CategoryId));
+                .ForMember(dst => dst.Movies, opt => opt.Ignore())
+                .ConstructUsing((src) => new Category(src.Id, src.Name, src.Description, src.Status));
         }
     }
 }

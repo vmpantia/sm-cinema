@@ -1,9 +1,10 @@
-﻿using SMCinema.Domain.Enumerations.Statuses;
+﻿using SMCinema.Domain.Contracts;
+using SMCinema.Domain.Enumerations.Statuses;
 using System.ComponentModel.DataAnnotations;
 
 namespace SMCinema.Infrastructure.Database.Entities
 {
-    public class Movie
+    public class Movie : IEntity
     {
         [Key, Required]
         public Guid Id { get; set; }

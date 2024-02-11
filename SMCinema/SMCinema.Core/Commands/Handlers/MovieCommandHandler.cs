@@ -22,16 +22,16 @@ namespace SMCinema.Core.Commands.Handlers
         public async Task<Guid> Handle(CreateCategoryCommand request, CancellationToken cancellationToken)
         {
             var movie = _mapper.Map<Movie>(request);
-            return await _movieRepository.AddMovieAsync(movie, request.Requestor);
+            return await _movieRepository.AddAsync(movie, request.Requestor);
         }
 
         public async Task Handle(UpdateCategoryCommand request, CancellationToken cancellationToken)
         {
             var movie = _mapper.Map<Movie>(request);
-            await _movieRepository.UpdateMovieAsync(movie, request.Requestor);
+            await _movieRepository.UpdateAsync(movie, request.Requestor);
         }
 
         public async Task Handle(DeleteCategoryCommand request, CancellationToken cancellationToken) =>
-            await _movieRepository.DeleteMovieAsync(request.Id, request.Requestor);
+            await _movieRepository.DeleteAsync(request.Id, request.Requestor);
     }
 }

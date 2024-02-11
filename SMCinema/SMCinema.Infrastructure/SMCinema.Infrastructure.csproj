@@ -16,4 +16,8 @@
     <ProjectReference Include="..\SMCinema.Domain\SMCinema.Domain.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Database\Common\" />
+  </ItemGroup>
+
 </Project>

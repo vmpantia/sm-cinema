@@ -2,7 +2,7 @@
 
 namespace SMCinema.Domain.Models
 {
-    public class Movie
+    public class Movie 
     {
         public Movie(string name, string? description, MovieStatus status, Guid categoryId)
         {
