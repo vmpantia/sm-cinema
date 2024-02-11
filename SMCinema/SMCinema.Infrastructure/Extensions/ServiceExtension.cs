@@ -18,6 +18,5 @@ namespace SMCinema.Infrastructure.Extensions
             services.AddScoped<IMovieRepository, MovieRepository>()
                     .AddScoped<ICategoryRepository, CategoryRepository>();
         }
-            
     }
 }
