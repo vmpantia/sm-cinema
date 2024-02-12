@@ -3,6 +3,7 @@ using SMCinema.Infrastructure.Database.Contexts;
 using SMCinema.Domain.Models;
 using SMCinema.Domain.Enumerations.Statuses;
 using SMCinema.Domain.Contracts;
+using SMCinema.Infrastructure.Database.Common;
 
 namespace SMCinema.Infrastructure.Database.Repositories
 {

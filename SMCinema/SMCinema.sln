@@ -9,7 +9,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SMCinema.Core", "SMCinema.C
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SMCinema.Domain", "SMCinema.Domain\SMCinema.Domain.csproj", "{A65A09AD-9E93-4F3F-BDF4-67166ACD309B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SMCinema.AppService", "SMCinema.AppService\SMCinema.AppService.csproj", "{B7B7AF73-3CC7-4F10-AAC1-3456632AD075}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SMCinema.AppService", "SMCinema.AppService\SMCinema.AppService.csproj", "{B7B7AF73-3CC7-4F10-AAC1-3456632AD075}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SMCinema.WebApi", "SMCinema.WebApi\SMCinema.WebApi.csproj", "{1D6EBD62-B647-4A85-872C-654E9BBFED3E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{B7B7AF73-3CC7-4F10-AAC1-3456632AD075}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B7B7AF73-3CC7-4F10-AAC1-3456632AD075}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B7B7AF73-3CC7-4F10-AAC1-3456632AD075}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1D6EBD62-B647-4A85-872C-654E9BBFED3E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1D6EBD62-B647-4A85-872C-654E9BBFED3E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1D6EBD62-B647-4A85-872C-654E9BBFED3E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1D6EBD62-B647-4A85-872C-654E9BBFED3E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

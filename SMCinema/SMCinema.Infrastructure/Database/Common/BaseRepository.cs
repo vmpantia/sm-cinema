@@ -5,9 +5,9 @@ using SMCinema.Domain.Contracts;
 using SMCinema.Infrastructure.Database.Contexts;
 using System.Linq.Expressions;
 
-namespace SMCinema.Infrastructure.Database.Repositories
+namespace SMCinema.Infrastructure.Database.Common
 {
-    public abstract class BaseRepository<TEntity, TModel> : IBaseRepository<TModel> 
+    public abstract class BaseRepository<TEntity, TModel> : IBaseRepository<TModel>
         where TEntity : class, IEntity
         where TModel : class
     {
