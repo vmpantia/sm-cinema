@@ -15,8 +15,4 @@
     <ProjectReference Include="..\SMCinema.Domain\SMCinema.Domain.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Queries\Categories\" />
-  </ItemGroup>
-
 </Project>

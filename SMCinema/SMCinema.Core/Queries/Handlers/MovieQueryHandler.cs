@@ -39,10 +39,6 @@ namespace SMCinema.Core.Queries.Handlers
             // Get movies from the database
             var movies = await _movieRepository.GetByExpressionAsync(data => data.Status == MovieStatus.Active);
 
-            // Check if movie is exist
-            if (movies is null)
-                throw new ArgumentNullException(nameof(movies));
-
             // Map movies to list of MovieViewModel
             return _mapper.Map<IEnumerable<MovieViewModel>>(movies);
         }
@@ -51,10 +47,6 @@ namespace SMCinema.Core.Queries.Handlers
         {
             // Get movies from the database
             var movies = await _movieRepository.GetByExpressionAsync(data => data.Status == MovieStatus.Active);
-
-            // Check if movie is exist
-            if (movies is null)
-                throw new ArgumentNullException(nameof(movies));
 
             // Map movies to list of MovieLiteViewModel
             return _mapper.Map<IEnumerable<MovieLiteViewModel>>(movies);
