@@ -1,8 +1,8 @@
 ﻿using MediatR;
 
-namespace SMCinema.Core.Commands.Models.Movie
+namespace SMCinema.Core.Commands.Categories
 {
-    public class DeleteMovieCommand : IRequest
+    public class DeleteCategoryCommand : IRequest
     {
         public Guid Id { get; set; }
         public string Requestor { get; set; }

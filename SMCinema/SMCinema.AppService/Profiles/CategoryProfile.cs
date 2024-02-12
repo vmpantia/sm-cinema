@@ -1,5 +1,5 @@
 ﻿using AutoMapper;
-using SMCinema.Core.Commands.Models.Movie;
+using SMCinema.Core.Commands.Categories;
 using SMCinema.Domain.Enumerations.Statuses;
 using SMCinema.Domain.Models;
 

@@ -1,6 +1,6 @@
 ﻿using MediatR;
 
-namespace SMCinema.Core.Commands.Models.Movie
+namespace SMCinema.Core.Commands.Categories
 {
     public class CreateCategoryCommand : IRequest<Guid>
     {

@@ -1,6 +1,6 @@
 ﻿using AutoMapper;
 using MediatR;
-using SMCinema.Core.Commands.Models.Movie;
+using SMCinema.Core.Commands.Categories;
 using SMCinema.Domain.Contracts;
 using SMCinema.Domain.Models;
 
